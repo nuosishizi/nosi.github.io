@@ -62,11 +62,11 @@
         } else {}
         var num = Math.floor(Math.random() * 10000000);
         if (fn_web_link.match(/\/$/g) == "/") {
-        if (user_id || "undefined" == typeof user_id || 0 == user_id) lastLink = fn_web_link.replace(/\/$/g, "") + "&?source=" + fb_article_place + user_id + "&num=" + num;
-            else var lastLink = fn_web_link + "&?source=" + fb_article_place + "&num=" + num;
+        if (user_id || "undefined" == typeof user_id || 0 == user_id) lastLink = fn_web_link.replace(/\/$/g, "") + "?source=" + fb_article_place + user_id + "&num=" + num;
+            else var lastLink = fn_web_link + "?source=" + fb_article_place + "&num=" + num;
         } else {
             if (user_id || "undefined" == typeof user_id || 0 == user_id) lastLink = fn_web_link + "?source=" + fb_article_place + user_id + "&num=" + num;
-            else var lastLink = fn_web_link + "&?source=" + fb_article_place + "&num=" + num;
+            else var lastLink = fn_web_link + "?source=" + fb_article_place + "&num=" + num;
         }
         var res = lastLink.split(" ");
         res = res.join('');
